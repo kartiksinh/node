@@ -16,16 +16,16 @@
 }
 
 .form-control input {
-    border: 1px solid #dbc441;
+    border: 1px solid #364857;
     font: inherit;
     border-radius: 2px;
 }
 
 button {
     font: inherit;
-    border: 1px solid #dbc441;
+    border: 1px solid #364857;
     color: #fff;
-    background: #dbc441;
+    background: #364857;
     border-radius: 3px;
     cursor: pointer;
 }
