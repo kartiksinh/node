@@ -35,3 +35,14 @@ button.active {
     background-color: rgb(111, 197, 25);
     color: #fff;
 }
+
+.grid{
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+.card_header{
+    text-align: center;
+}

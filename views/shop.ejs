@@ -1,0 +1,38 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/product.css">
+    </head>
+
+    <body>
+        <%- include('includes/navigation.ejs') %>
+
+            <main>
+                <% if (prods.length> 0) { %>
+                    <% for(let product of prods) { %>
+                        <div class="grid">
+
+                            <article class="card product_item">
+                                <header class="card_header">
+                                    <h1 class="product_title">
+                                        <%= product.title %>
+                                    </h1>
+                                </header>
+                                <div class="card_image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErly0p-YJKhzr8H0TWeRmrbdSDPBK8O-ERQ&usqp=CAU"
+                                        , alt="India Art & Culture" />
+                                </div class="card_content">
+                                <div>
+                                    <h2 class="product_price">$1.99</h2>
+                                    <p class="product_description">A very interesting book about so many evets.</p>
+                                </div>
+                                <div class="card_actions">
+                                    <button class="btn">Add to Cart</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <% } %>
+                            <% } else { %>
+                                <h1>No Products Found</h1>
+                                <% } %>
+            </main>
+            <%- include('includes/end.ejs') %>
